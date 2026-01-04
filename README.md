@@ -52,12 +52,18 @@ Edit file: `src/content/profile/me.json`
   "bio": "A short bio about yourself",
   "avatar": "../../assets/avatar.png",
   "location": "City, Country",
-  "verified": true
+  "verified": true,
+  "phone": "+1234567890", // Optional: for VCard/Save Contact
+  "email": "hello@example.com" // Optional: for VCard/Save Contact
 }
 ```
 *Note: Place your profile picture in the `src/assets/` directory.*
 
-### 🔗 2. Links (Bento Grid)
+### 📥 2. Save Contact (VCard)
+The "Save Contact" button on the home page allows users to download your contact information directly to their phone.
+To configure the information included in the VCard (.vcf file), add the `phone` and `email` fields to your `src/content/profile/me.json` as shown above.
+
+### 🔗 3. Links (Bento Grid)
 Each link is a `.json` file in the `src/content/links/` directory. You can create multiple files like `facebook.json`, `portfolio.json`, `bank.json`.
 
 **Link File Structure:**
@@ -82,7 +88,7 @@ Each link is a `.json` file in the `src/content/links/` directory. You can creat
 To enable fast copy, set the URL to: `#copy:content-to-copy`
 *Example: `#copy:0123456789`*
 
-### 📱 3. Social Media
+### 📱 4. Social Media
 Edit/Create files in: `src/content/socials/`
 These will always render as `small` cards at the end of the grid.
 
@@ -112,5 +118,17 @@ The `dist/` directory will contain your static site source code, ready to be dep
 - Use the Astro `<Image />` component for automatic image optimization.
 - View Transitions are pre-configured for a smooth "App-like" navigation experience.
 
+## deploy cloudflare
+
+
+```bash
+npm install -g wrangler
+```
+
+```bash
+npm run clean && npm run build && npx wrangler pages deploy dist --project-name rocky-nguyen
+```
+
+- change rocky-nguyen with your project name
 ---
 *Template created by **Rocky Nguyen**.*

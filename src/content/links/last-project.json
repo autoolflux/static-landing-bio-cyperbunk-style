@@ -1,0 +1,9 @@
+{
+    "id": "project",
+    "title": "Latest Project: Astro Bio-Link",
+    "url": "https://github.com/autoolflux/static-landing-bio-cyperbunk-style",
+    "icon": "Github",
+    "isFeatured": true,
+    "layout": "large",
+    "color": "#FF0000"
+}

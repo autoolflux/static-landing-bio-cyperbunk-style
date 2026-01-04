@@ -1,8 +1,8 @@
 {
     "id": "bank",
-    "title": "Donate / Support",
-    "url": "#copy:123-456-789",
-    "icon": "CreditCard",
+    "title": "Donate (Crypto)",
+    "url": "#copy:0xd4b3086f74990c04b23f2b91ee6cfe644962262b",
+    "icon": "Coffee",
     "layout": "medium",
     "color": "#10B981"
 }

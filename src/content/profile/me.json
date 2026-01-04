@@ -3,5 +3,6 @@
   "bio": "Full Stack Developer | Content Creator. Building modern web experiences.",
   "avatar": "../../assets/avatar.png",
   "location": "Vietnam",
-  "verified": true
+  "verified": true,
+  "email": "contact@launchlean.dev"
 }

@@ -8,6 +8,8 @@ const profile = defineCollection({
     avatar: image(),
     location: z.string(),
     verified: z.boolean(),
+    phone: z.string().optional(),
+    email: z.string().optional(),
   }),
 });
 

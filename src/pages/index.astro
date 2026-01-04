@@ -107,7 +107,12 @@ const sortedSocials = socials.sort(
 		</div>
 
 		<div class="flex flex-wrap justify-center gap-4">
-			<VCardButton client:visible name={profile.name} />
+			<VCardButton
+				client:visible
+				name={profile.name}
+				phone={profile.phone}
+				email={profile.email}
+			/>
 		</div>
 	</section>
 

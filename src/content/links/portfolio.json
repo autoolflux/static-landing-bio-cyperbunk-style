@@ -1,8 +1,8 @@
 {
     "id": "portfolio",
-    "title": "My Portfolio",
-    "url": "https://rocky.dev",
-    "icon": "Briefcase",
+    "title": "My site",
+    "url": "https://launchlean.dev",
+    "icon": "Globe",
     "layout": "medium",
     "color": "#3B82F6"
 }
